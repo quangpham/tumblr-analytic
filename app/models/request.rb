@@ -1,3 +1,3 @@
 class Request < ActiveRecord::Base
-  attr_accessible :ip, :url
+  attr_accessible :ip, :url, :title
 end
