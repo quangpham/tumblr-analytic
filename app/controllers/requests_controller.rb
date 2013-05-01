@@ -24,12 +24,7 @@ class RequestsController < ApplicationController
   # GET /requests/new
   # GET /requests/new.json
   def new
-    @request = Request.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @request }
-    end
+    Request.delete_all
   end
 
   # GET /requests/1/edit
